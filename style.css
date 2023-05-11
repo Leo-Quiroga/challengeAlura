@@ -1,43 +1,42 @@
-body{
+body {
     font-family: 'Inter', sans-serif;
     max-width: 100%;
     max-height: 100%;
-    margin: 1em auto;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F5FC;
 }
 
 /* css header */
 
-header{
-    
-    
+.divImagen{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 40px;
+
+    position: absolute;
+    width: 120px;
+    height: 48px;
+    left: 40px;
+    top: 40px;
+
 }
 
-.imagen-logo{
+.imagen-logo {
 
-    /* display: block;
-    position: fixed; */
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 40px;
 
-position: absolute;
-width: 120px;
-height: 48px;
-left: 40px;
-top: 40px;
-    
 }
-
 
 /* css main */
-.tablero{
-    
-    display: flex;
-    margin: 0 0 0 6em;
-    height: 45em;
-    
+.tablero {
+
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    padding: 0;
+
 }
 
 /* .tablero-texto{
@@ -55,133 +54,156 @@ top: 40px;
 
 }
 */
-.textArea1{
+.textArea1 {
     position: absolute;
-    width: 600px;
-    height: 783px;
-    left: 240px;
-    top: 205px;
-}
-/*
-.areaTexto{
+    width: 39em;
+    height: 28em;
+    left: 14em;
+    top: 8em;
     
-    margin: 0 auto;
-    padding: 1em;
+}
+
+#inputTexto{
+      
     width: 100%;
     height: 100%;
-    
-}
-*/
-.textArea2{
-    position: absolute;
-    width: 400px;
-    height: 944px;
-    left: 1000px;
-    top: 40px;
-}
-/*
-.areaEncriptada{
-    
-
     margin: 0;
     padding: 1em;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    color: rgb(blue);    
+    font-weight: bold;
+    background-color: #F3F5FC;
+}
+
+
+.textArea2 {
+    position: absolute;
+    width: 25em;
+    height: 44em;
+    left: 60em;
+    top: 3em;
+    
+}
+
+.areaEncriptada {
+
     width: 100%;
     height: 100%;
+    margin: 0;
+    padding: 0;
+    
 
 } 
 
-*/
-.dibujoDerecha{
-position: absolute;
-width: 336px;
-height: 304px;
-left: 1032px;
-top: 283px;
+
+.dibujoDerecha {
+    position: absolute;
+    width: 15em;
+    height: 14em;
+    left: 62em;
+    top: 10em;
 }
 
-.textoAreaDerecha{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-gap: 16px;
+.dibujo{
 
-position: absolute;
-width: 336px;
-height: 122px;
-left: 1032px;
-top: 619px;
+    position: absolute;
+
+}
+
+.textoAreaDerecha {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    padding: 0;
+    gap: 1em;
+    position: absolute;
+    width: 20em;
+    height: 5em;
+    left: 62.5em;
+    top: 32em;
+}
+
+.mensajeDerecha1{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mensajeDerecha2{
+    
 }
 
 .instrucciones {
 
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 0px;
-gap: 8px;
-
-position: absolute;
-width: 300px;
-height: 18px;
-left: 240px;
-top: 851px;
-
-}
-
-.textoIntrucciones{
-font-size: 12px;
-}
-
-
-/*
-.botones{
-
-    margin: 3rem 0 2em 9em;
-        
-}
-
-*/
-.botonesIzquierda{
-
-    /* display: inline-flex;
-    flex-direction: row;  */
-    
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-gap: 24px;
-
-position: absolute;
-width: 680px;
-height: 67px;
-left: 240px;
-top: 885px;
-}
-
-/*
-
-.botonEncriptaryDesencriptar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 1em;
+    position: absolute;
+    width: 14em;
+    height: 2em;
+    left: 14em;
+    top: 39em;
 
 }
 
-*/
-.botonesDerecha{
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0;
-gap: 8px;
-
-position: absolute;
-width: 336px;
-height: 67px;
-left: 1032px;
-top: 885px;
+.textoIntrucciones {
+    font-size: 12px;
     
 }
+
+.botonesIzquierda {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 2em;
+    position: absolute;
+    width: 42em;
+    height: 5em;
+    left: 14em;
+    top: 41em;
+    justify-content: space-evenly;
+}
+
+.botonEncriptar{
+    
+    padding: 2em;
+    width: 100%;
+
+}
+
+.botonDesencriptar{
+   
+    padding: 2em;
+    width: 100%;
+    
+}
+
+.botonesDerecha {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    gap: 0;
+    position: absolute;
+    width: 21em;
+    height: 5em;
+    left: 62em;
+    top: 41em;
+    justify-content: center;
+
+}
+
+.botonCopiar{
+    padding: 2em;
+    width: 100%;
+
+}
+
 /*
 #encriptar{
     
@@ -207,15 +229,18 @@ top: 885px;
     
 } */
 
-.areaEncriptada:focus{ /* quita el resalte del borde al estar seleccionado el input */
+.areaEncriptada:focus {
+    /* quita el resalte del borde al estar seleccionado el input */
     outline: none;
 
 }
 
-.areaEncriptada::-moz-selection{  /*quita el color del seleccionado en el navegador Mozilla*/
- background-color: transparent;
+.areaEncriptada::-moz-selection {
+    /*quita el color del seleccionado en el navegador Mozilla*/
+    background-color: transparent;
 }
 
-.areaEncriptada::selection{
-    background-color: transparent;  /*quita el color del seleccionado en los otros navegadores*/
+.areaEncriptada::selection {
+    background-color: transparent;
+    /*quita el color del seleccionado en los otros navegadores*/
 }

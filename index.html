@@ -20,8 +20,12 @@
 
   <header>
 
-    <img src="imagenes/logo.png" class="imagen-logo">
+    <div class="divImagen">
 
+      <img src="imagenes/logo.png" class="imagen-logo">
+
+    </div>
+    
   </header>
 
   <main>
@@ -32,7 +36,7 @@
 
         <div class= "textArea1">
 
-          <textarea rows="10" cols="30" required placeholder="Ingresa el texto." id="inputTexto" class="areaTexto"></textarea>
+          <textarea  rows="10" cols="30" required placeholder="Ingrese el texto aquí." id="inputTexto" class="areaTexto"></textarea>
   
           
         </div>
@@ -47,8 +51,8 @@
   
         <div class="botonesIzquierda">
       
-          <input type="submit" value="Encriptar" class="botonEncriptaryDesencriptar" id="encriptar">
-          <input type="submit" value="Desencriptar" class="botonEncriptaryDesencriptar" id="desencriptar">
+          <input type="submit" value="Encriptar" class="botonEncriptar" id="encriptar">
+          <input type="submit" value="Desencriptar" class="botonDesencriptar" id="desencriptar">
       
         </div>
             
@@ -56,6 +60,12 @@
       </di>
   
       <div class="tablero-encriptado">
+
+        <div class="textArea2">
+
+          <textarea rows="10" cols="30" id="inputEncriptado" class="areaEncriptada"></textarea>
+
+        </div>
 
         <div class="dibujoDerecha">
 
@@ -65,17 +75,11 @@
 
         <div class="textoAreaDerecha">
           
-          <h2>Ningún mensaje encontrado.</h2>
-          <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+          <h2 class="mensajeDerecha1">Ningún mensaje fue encontrado</h2>
+          <p class="mensajeDerecha2">Ingresa el texto que deseas encriptar o desencriptar.</p>
 
         </div>
 
-        <div class="textArea2">
-
-          <textarea rows="10" cols="30" id="inputEncriptado" class="areaEncriptada"></textarea>
-
-        </div>
-  
         <div class="botonesDerecha">
   
             <input type="submit" value="Copiar" class="botonCopiar" id="copiar">
@@ -96,6 +100,7 @@
   <footer>
 
   </footer>
+
 </body>
 
 </html>
