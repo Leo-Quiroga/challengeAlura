@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+
+  <link rel="stylesheet" ; href="reset.css" ;>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <header>
+
+    <img src="imagenes/logo.png" class="imagen-logo">
+
+  </header>
+
+  <main>
+ 
+    <div class="tablero">
+
+      <div class="tablero-texto">
+
+        <div class= "textArea1">
+
+          <textarea rows="10" cols="30" required placeholder="Ingresa el texto." id="inputTexto" class="areaTexto"></textarea>
+  
+          
+        </div>
+
+        <div class="instrucciones">
+          
+          <p class="textoIntrucciones">⚠ Sólo letras minúsculas y sin acentos.</p>
+
+        </div>
+  
+        
+  
+        <div class="botonesIzquierda">
+      
+          <input type="submit" value="Encriptar" class="botonEncriptaryDesencriptar" id="encriptar">
+          <input type="submit" value="Desencriptar" class="botonEncriptaryDesencriptar" id="desencriptar">
+      
+        </div>
+            
+  
+      </di>
+  
+      <div class="tablero-encriptado">
+
+        <div class="dibujoDerecha">
+
+          <img src="imagenes/dibujo.png" class="dibujo">
+        
+        </div>
+
+        <div class="textoAreaDerecha">
+          
+          <h2>Ningún mensaje encontrado.</h2>
+          <p>Ingresa el texto que deseas encriptar o desencriptar.</p>
+
+        </div>
+
+        <div class="textArea2">
+
+          <textarea rows="10" cols="30" id="inputEncriptado" class="areaEncriptada"></textarea>
+
+        </div>
+  
+        <div class="botonesDerecha">
+  
+            <input type="submit" value="Copiar" class="botonCopiar" id="copiar">
+            <span id="message"></span>
+    
+        </div>
+  
+      </div>
+  
+  
+    </div>
+  
+
+  </main>
+
+  <script src="./index.js"></script>
+
+  <footer>
+
+  </footer>
+</body>
+
+</html>
