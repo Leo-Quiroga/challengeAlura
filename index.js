@@ -134,13 +134,7 @@ function copiarPortapapeles() {                  //función que copia el texto d
 
     inputEncriptado.focus();                    //pone el foco en el textArea.
     document.execCommand("selectAll");         //selecciona todo el texto del textArea.
-
-    if (contenidoEncriptado == false) {
-        alert("No hay nada para copiar")
-    } else {
-        document.execCommand("copy");              //copia el texto del textArea.
-    }
-
+    document.execCommand("copy");              //copia el texto del textArea.
     mensajeCopiado.value = "Copiado";                  //se Cambia el texto del botón para que sepa que se copió el texto.
     setTimeout(() => {
         mensajeCopiado.value = "Copiar";                // vuelve a poner Compiar.
