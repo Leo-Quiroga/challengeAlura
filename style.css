@@ -9,7 +9,18 @@ body {
 
 /* css header */
 
-.divImagen{
+header {
+
+    position: absolute;
+    max-width: 100%;
+    max-height: 50px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.divImagen {
+
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -24,66 +35,71 @@ body {
 
 }
 
-.imagen-logo {
-
-
-}
-
 /* css main */
-.tablero {
 
+main {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 80%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
     margin: 0;
-    padding: 0;
-
+    box-sizing: border-box;
 }
 
-/* .tablero-texto{
-    
-    margin: 10em 0 2em 4em;
-    width: 55%;
-    
-}
-
-.tablero-encriptado{
-    
-   
-    margin: 6em 2em 2em 5%;
-    width: 30%;
-
-}
-*/
 .textArea1 {
     position: absolute;
-    width: 39em;
-    height: 28em;
-    left: 14em;
+    display: inline-block;
+    max-width: 39em;
+    max-height: 28em;
+    width: 100%;
+    height: 100%;
     top: 8em;
-    
+    left: 14em;
+
 }
 
-#inputTexto{
-      
+textarea:focus,
+input:focus,
+input[type]:focus {
+
+    border-color: rgb(10, 56, 113);
+    box-shadow: 0 1px 1px rgba(9, 58, 125, 0.075)inset, 0 0 8px rgba(10, 56, 120, 0.6);
+    outline: 0 none;
+}
+
+.areaTexto {
+
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 1em;
-    font-size: 24px;
+    font-size: 22px;
     font-family: 'Inter', sans-serif;
-    color: rgb(blue);    
+    color: #0a3871;
+    font-weight: 550;
+    background-color: white;
+    text-align: justify;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #0A3871;
     font-weight: bold;
-    background-color: #F3F5FC;
 }
 
 
 .textArea2 {
     position: absolute;
-    width: 25em;
-    height: 44em;
-    left: 60em;
+    width: 22em;
+    height: 41em;
+    right: 14em;
     top: 3em;
-    
+
 }
 
 .areaEncriptada {
@@ -91,46 +107,49 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-    
+    padding: 1em;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 550;
+    text-align: justify;
+    border: none;
+    border-radius: 24px;
 
-} 
-
+}
 
 .dibujoDerecha {
     position: absolute;
     width: 15em;
     height: 14em;
-    left: 62em;
+    right: 19em;
     top: 10em;
 }
 
-.dibujo{
+.dibujo {
 
     position: absolute;
 
 }
 
 .textoAreaDerecha {
+
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
     padding: 0;
     gap: 1em;
     position: absolute;
     width: 20em;
     height: 5em;
-    left: 62.5em;
+    right: 14em;
     top: 32em;
+
 }
 
-.mensajeDerecha1{
+.mensajeDerecha1 {
     font-size: 24px;
     font-weight: bold;
-}
-
-.mensajeDerecha2{
-    
 }
 
 .instrucciones {
@@ -143,14 +162,19 @@ body {
     position: absolute;
     width: 14em;
     height: 2em;
-    left: 14em;
     top: 39em;
+    left: 14em;
 
 }
 
 .textoIntrucciones {
     font-size: 12px;
-    
+
+}
+
+.spanRojo {
+    font-size: 14px;
+    color: red;
 }
 
 .botonesIzquierda {
@@ -163,23 +187,37 @@ body {
     position: absolute;
     width: 42em;
     height: 5em;
-    left: 14em;
     top: 41em;
     justify-content: space-evenly;
+    left: 14em;
 }
 
-.botonEncriptar{
-    
-    padding: 2em;
+.botonEncriptar {
+
+    padding: 1.5em;
     width: 100%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #0A3871;
+    color: white;
+    cursor: pointer;
 
 }
 
-.botonDesencriptar{
-   
-    padding: 2em;
+.botonDesencriptar {
+
+    padding: 1.5em;
     width: 100%;
-    
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #0A3871;
+    cursor: pointer;
+
 }
 
 .botonesDerecha {
@@ -192,42 +230,26 @@ body {
     position: absolute;
     width: 21em;
     height: 5em;
-    left: 62em;
+    right: 13em;
     top: 41em;
     justify-content: center;
 
 }
 
-.botonCopiar{
-    padding: 2em;
+.botonCopiar {
+
+    padding: 1.5em;
     width: 100%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: #0A3871;
+    cursor: pointer;
+    opacity: 0;
 
 }
-
-/*
-#encriptar{
-    
-    padding: 2em;
-    width: 40em;
-    margin: 0 1em 0 0;
-
-}
-
-#desencriptar{
-
-    padding: 2em;
-    width: 40em;
-    margin: 0 0 0 1wm;
-
-}
-
-#copiar{
-
-    
-    padding: 2em;
-    width: 40em;
-    
-} */
 
 .areaEncriptada:focus {
     /* quita el resalte del borde al estar seleccionado el input */
