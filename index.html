@@ -13,87 +13,51 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-
+  
   <header>
-
     <div class="divImagen">
-
       <img src="imagenes/logo.png" class="imagen-logo">
-
     </div>
-
   </header>
 
   <main>
-
     <section class="tableroTexto">
-
       <div class="textArea1">
-
         <textarea rows="10" cols="30" required placeholder="Ingrese el texto aquí." id="inputTexto"
           class="areaTexto"></textarea>
-
       </div>
-
       <div class="instrucciones">
-
         <p class="textoIntrucciones"><span class="spanRojo">⚠</span> Sólo letras minúsculas y sin acentos.</p>
-
       </div>
-
       <div class="botonesIzquierda">
-
         <input type="submit" value="Encriptar" class="botonEncriptar" id="encriptar">
         <input type="submit" value="Desencriptar" class="botonDesencriptar" id="desencriptar">
-
       </div>
     </section>
-
     <section class="tableroEncriptado">
-
       <div class="textArea2">
-
         <textarea readonly rows="10" cols="30" id="inputEncriptado" class="areaEncriptada"></textarea>
-
       </div>
-
       <div id="desaparecer">
-        <div class="dibujoDerecha">
-
+        <div class="dibujoDerecha" id="dibujo">
           <img src="imagenes/dibujo.png" class="dibujo">
-
         </div>
-
         <div class="textoAreaDerecha">
-
           <h2 class="mensajeDerecha1">Ningún mensaje fue encontrado</h2>
           <p class="mensajeDerecha2">Ingresa el texto que deseas encriptar o desencriptar.</p>
-
         </div>
-
       </div>
-
-
-      <div class="botonesDerecha">
-
+      <div class="botonesDerecha" id="animacionBoton">
         <input type="submit" value="Copiar" class="botonCopiar" id="copiar">
-
       </div>
-
     </section>
-
   </main>
-
   <script src="./index.js"></script>
-
   <footer>
 
   </footer>
-
 </body>
-
 </html>
