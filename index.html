@@ -18,46 +18,91 @@
 <body>
   
   <header>
-    <div class="divImagen">
-      <img src="imagenes/logo.png" class="imagen-logo">
+  
+    <div  class="col-xs-3 col-m-4"> 
+      <div class="divImagen">
+        <img src="imagenes/logo.png" class="imagen-logo">
+      </div>
     </div>
+
+    <div class="col-xs-6 col-m-8">
+      <h1 class="titulo">EnCRIPTAdor</h1>
+    </div>
+    <div class="col-xs-3 col-m-8">
+      <img src="imagenes/castle.png" class="imagen-titulo">
+    </div>
+
   </header>
 
   <main>
-    <section class="tableroTexto">
-      <div class="textArea1">
-        <textarea rows="10" cols="30" required placeholder="Ingrese el texto aquí." id="inputTexto"
-          class="areaTexto"></textarea>
+
+    <div class="contenedor">
+
+      <div class="fila">
+
+        
+        <section class="col-xs-12 col-m-8" id="section1">
+
+          <div class="areaTexto">
+            <textarea rows="10" cols="30" required placeholder="Ingrese el texto aquí." id="inputTexto" class="textArea1">
+            </textarea>
+          </div>
+          <div class="instrucciones">
+            <p class="textoIntrucciones"><span class="spanRojo">⚠</span> Sólo letras minúsculas y sin acentos.</p>
+          </div>
+          <div class="botonesIzquierda">
+            <input type="submit" value="Encriptar" class="botonEncriptar" id="encriptar">
+            <input type="submit" value="Desencriptar" class="botonDesencriptar" id="desencriptar">
+          </div>
+         
+        </section>
+      
+        <section class="col-xs-12 col-m-4" id="section2" >
+          
+          <div class="areaEncriptada" >
+            <p id="inputEncriptado"></p>
+
+            <div id="desaparecer">
+              <div class="dibujoDerecha" id="dibujo">
+                <img src="imagenes/dibujo.png" class="dibujo">
+              </div>
+              <div class="textoAreaDerecha">
+                 <h2 class="mensajeDerecha1">Ningún mensaje fue encontrado</h2>
+                <p class="mensajeDerecha2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+              </div>
+            </div>
+
+            <div class="botonesDerecha" id="animacionBoton">
+              <input type="submit" value="Copiar" class="botonCopiar" id="copiar">
+            </div>
+
+          </div>         
+          
+        </section>
       </div>
-      <div class="instrucciones">
-        <p class="textoIntrucciones"><span class="spanRojo">⚠</span> Sólo letras minúsculas y sin acentos.</p>
-      </div>
-      <div class="botonesIzquierda">
-        <input type="submit" value="Encriptar" class="botonEncriptar" id="encriptar">
-        <input type="submit" value="Desencriptar" class="botonDesencriptar" id="desencriptar">
-      </div>
-    </section>
-    <section class="tableroEncriptado">
-      <div class="textArea2">
-        <textarea readonly rows="10" cols="30" id="inputEncriptado" class="areaEncriptada"></textarea>
-      </div>
-      <div id="desaparecer">
-        <div class="dibujoDerecha" id="dibujo">
-          <img src="imagenes/dibujo.png" class="dibujo">
-        </div>
-        <div class="textoAreaDerecha">
-          <h2 class="mensajeDerecha1">Ningún mensaje fue encontrado</h2>
-          <p class="mensajeDerecha2">Ingresa el texto que deseas encriptar o desencriptar.</p>
-        </div>
-      </div>
-      <div class="botonesDerecha" id="animacionBoton">
-        <input type="submit" value="Copiar" class="botonCopiar" id="copiar">
-      </div>
-    </section>
+    </div>
+        
   </main>
   <script src="./index.js"></script>
+  
   <footer>
-
+    <div class="footerContainer">
+      
+      <div class="social-media">
+        <a href="https://github.com/" target="_blank">
+          <img src="imagenes/github.png" alt="GitHub" class="imgGitHub"></a>
+        <a href="https://linkedin.com/" target="_blank">
+          <img src="imagenes/linkedin.png" alt="LinkedIn" class="imgLinkedin"></a>
+      </div>
+      <div class="contact">
+        <p>hleonardoquirogab@hotmail.com</p>
+      </div>
+      <div class="creator">
+        <p class="copyright">© Copyright Leo-Qui</p>
+        <p>2023</p>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
