@@ -13,7 +13,7 @@ html, body {
 /* general css main */
 
 .contenedor{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -514,7 +514,7 @@ html, body {
     }
 }
 
-/* Responsive para tablets*/
+/* Responsive para tablets y escirorio pequeño*/
 
 @media only screen and (min-width: 600px ){
     .col-s-1{width: 8.33%;}
@@ -530,109 +530,269 @@ html, body {
     .col-s-11{width: 91.66%;}
     .col-s-12{width: 100%;}
 
-    header {
-        max-width: 768px;
-        max-height: 90px;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        text-align: center;
-        background: linear-gradient(#888888,#F3F5FC);
-        }
+header {
+    max-height: 10rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    text-align: center;
+    background: linear-gradient(#888888,#F3F5FC);
+    padding: 1rem;
     
-        .divImagen {
+}
+
+.divImagen {    
+    width: 7rem;
+}
     
-        margin: 0;
-        padding: 0;
-        width: 7rem;
-        }
-        .imagen-logo{
-            width: 100%;
-            margin: 2rem 0;
-        }
+.imagen-logo{
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.titulo{
+    width: 100%;
+    color:#0a3871;
+    font-size: 2rem;
+    font-weight: bold;       
+}
+
+.imagen-titulo{
+    width: 50%;
+    top: 0;
+}
+
+#section1{
+    /* width: 100%; */
+    text-align: center;
+}
+
+.fila{
+    display: flex;
+    flex-direction: column;
+}
+
+.areaTexto{
+    text-align: center; 
+    margin: 1rem 0;
+} 
     
-        .titulo{
-            width: 100%;
-            padding: 0.5rem;
-            color:#0a3871;
-            font-size: 1.5rem;
-            font-weight: 900;       
-        }
-    
-        .imagen-titulo{
-            width: 40%;
-        }
-    
-        .fila{
-            display: flex;
-            flex-direction: column;
-        }
+.textArea1 {
+    width: 90%;
+    height: 36rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #0a3871;
+    font-weight: 550;
+    background-color: #F3F5FC;
+    text-align: justify;
+    border: none;
+    cursor: auto;
+    resize: none;
+    outline: 0 none;
+}
 
-        #section1{
-            width: 100%;
-            text-align: center;
-        }
+.instrucciones {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    text-align: left;
+}
 
-        .areaTexto{
-            text-align: center;
-            margin: 1rem 0;
-        }
+.textoIntrucciones {
+    font-size: 14px;
+}
 
+.spanRojo {
+    font-size: 16px;
+    color: red;
+}
 
-        #section2{
-            width: 100%;
-            text-align: center;
-        }
-
-
-
-        
-    .footerContainer{
-      
-        text-align: center;
-        background: linear-gradient(#F3F5FC,#888888);
-        color: white;
-        font-weight: bold;
-     }
- 
-     .social-media{
-         display: flex;
-         flex-direction: row;
-         margin: 1rem;
-         display: inline-block
-     }
- 
-     .imgGitHub{
-         width: 2rem;
-         margin: 0 1rem;
-     }
-     .imgLinkedin{
-         width: 2rem;
-         margin: 0 1rem;
-     }
+.botonesIzquierda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 1rem auto;
 
 }
 
-/* Responsive para tablets grandes y escritorio pequeño*/
-
-@media only screen and (min-width: 768px ){
-    .col-m-1{width: 8.33%;}
-    .col-m-2{width: 16.66%;}
-    .col-m-3{width: 25%;}
-    .col-m-4{width: 33.33%;}
-    .col-m-5{width: 41.66%}
-    .col-m-6{width: 50%;}
-    .col-m-7{width: 58.33%;}
-    .col-m-8{width: 66.66%;}
-    .col-m-9{width: 75%;}
-    .col-m-10{width: 83.33%;}
-    .col-m-11{width: 91.66%;}
-    .col-m-12{width: 100%;}
+.botonEncriptar {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    border: 0.03rem solid #0A3871;
+    border-radius: 23.25rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #216FF4;
+    color: white;
+    cursor: pointer;
+    transition: 200ms all;
 }
 
-/* Responsive para escritorio mediano*/
+.botonEncriptar:hover {
+    border: solid 0.08rem #a3ffbf;
+    transform: scale(1.03);
+    background-color: #0A3871;
+    font-size: 19px;
+}
+    
+.botonDesencriptar {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    border: 0.03rem solid #0A3871;
+    border-radius: 23.25em;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
+.botonDesencriptar:hover {
+    border: solid 0.08rem #0d4d9c;
+    transform: scale(1.03);
+    background-color: #bbbbbb;
+    font-size: 19px;
+}
+
+#section2{
+    /* width: 100%; */
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.areaEncriptada {
+    width: 90%;
+    /* height: 100%; */
+    padding: 1rem;
+    background-color: white;
+    border-radius: 24px; 
+    margin: 0 auto;
+    text-align: justify;
+    cursor: default; 
+    
+    
+}
+
+#inputEncriptado{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 550;
+    padding: 1rem;
+}
+
+
+#desaparecer{
+    
+
+}
+
+.dibujoDerecha { 
+    width: 100%;
+    text-align: center;    
+} 
+    
+.dibujo {
+    width: 10%;
+    opacity: 1;  
+    
+    
+}
+    
+.textoAreaDerecha {
+
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    cursor: default;    
+    
+}
+    
+.mensajeDerecha1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1rem 0;
+    
+}
+.mensajeDerecha2 {
+    
+}
+    
+.botonesDerecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    position:fixed; 
+}
+
+#animacionBoton {
+    opacity: 0;
+}
+
+.botonCopiar {
+    padding: 1.5rem;
+    width: 80%;
+    border: 1px solid #0A3871;
+    border-radius: 23.25rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: #0A3871;
+    transition: 200ms all;
+}
+.botonCopiar:hover {
+    border: solid 0.08rem #0d4d9c;
+    transform: scale(1.03);
+    background-color: #0A3871;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.footerContainer{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    background: linear-gradient(#F3F5FC,#888888);
+    color: white;
+    font-weight: bold;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    display: inline-block
+}
+
+.imgGitHub{
+    width: 2rem;
+    margin: 0 1rem;
+}
+.imgLinkedin{
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+}
+
+
+/* Responsive para escritorio mediano en adelante*/
 
 @media only screen and (min-width: 992px ){
     .col-l-1{width: 8.33%;}
@@ -647,22 +807,274 @@ html, body {
     .col-l-10{width: 83.33%;}
     .col-l-11{width: 91.66%;}
     .col-l-12{width: 100%;}
+
+
+    header {
+        max-height: 10rem;
+        max-width: 1400px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        text-align: center;
+        background: linear-gradient(#888888,#F3F5FC);
+        padding: 1rem;
+        margin: 0 auto;
+        
+    } 
+    
+    .divImagen {    
+        width: 8rem;
+    }
+        
+    .imagen-logo{
+        width: 100%;
+        margin: 2rem 0;
+        resize: none;
+    }
+    
+    .titulo{
+        width: 100%;
+        color:#0a3871;
+        font-size: 3rem;
+        font-weight: bold;       
+    }
+    
+    .imagen-titulo{
+        width: 30%;
+        top: 0;
+    }
+    
+    #section1{
+        /* width: 100%; */
+        /* text-align: center; */
+    }
+
+    .fila{
+        display: flex;
+        flex-direction: row;
+    }
+
+    
+.areaTexto{
+    text-align: center; 
+    margin: 1rem 0;
+} 
+    
+.textArea1 {
+    width: 90%;
+    height: 36rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #0a3871;
+    font-weight: 550;
+    background-color: #F3F5FC;
+    text-align: justify;
+    border: none;
+    cursor: auto;
+    resize: none;
+    outline: 0 none;
 }
 
-/* Responsive para escritorio grande*/
-
-@media only screen and (max-width: 1200px ){
-    .col-xl-1{width: 8.33%;}
-    .col-xl-2{width: 16.66%;}
-    .col-xl-3{width: 25%;}
-    .col-xl-4{width: 33.33%;}
-    .col-xl-5{width: 41.66%}
-    .col-xl-6{width: 50%;}
-    .col-xl-7{width: 58.33%;}
-    .col-xl-8{width: 66.66%;}
-    .col-xl-9{width: 75%;}
-    .col-xl-10{width: 83.33%;}
-    .col-xl-11{width: 91.66%;}
-    .col-xl-12{width: 100%;}
+.instrucciones {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+    text-align: left;
 }
+
+.textoIntrucciones {
+    font-size: 14px;
+}
+
+.spanRojo {
+    font-size: 16px;
+    color: red;
+}
+
+.botonesIzquierda {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+
+}
+
+.botonEncriptar {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    border: 0.03rem solid #0A3871;
+    border-radius: 23.25rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #216FF4;
+    color: white;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
+.botonEncriptar:hover {
+    border: solid 0.08rem #a3ffbf;
+    transform: scale(1.03);
+    background-color: #0A3871;
+    font-size: 19px;
+}
+    
+.botonDesencriptar {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    width: 50%;
+    border: 0.03rem solid #0A3871;
+    border-radius: 23.25em;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #D8DFE8;
+    color: #0A3871;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
+.botonDesencriptar:hover {
+    border: solid 0.08rem #0d4d9c;
+    transform: scale(1.03);
+    background-color: #bbbbbb;
+    font-size: 19px;
+}
+
+#section2{
+    /* width: 100%; */
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.areaEncriptada {
+    width: 90%;
+    height: 42rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 24px; 
+    margin: 0 auto;
+    text-align: justify;
+    cursor: default; 
+    
+    
+}
+
+#inputEncriptado{
+    width: 100%;
+    /* height: 100%; */
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    font-weight: 550;
+    padding: 1rem;
+}
+
+
+#desaparecer{
+    
+
+}
+
+.dibujoDerecha { 
+    width: 100%;
+    text-align: center;    
+} 
+    
+.dibujo {
+    width: 10%;
+    opacity: 1;  
+    
+    
+}
+    
+.textoAreaDerecha {
+
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    cursor: default;    
+    
+}
+    
+.mensajeDerecha1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 1rem 0;
+    
+}
+.mensajeDerecha2 {
+    
+}
+    
+.botonesDerecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem 0;
+    position:fixed; 
+}
+
+#animacionBoton {
+    opacity: 0;
+}
+
+.botonCopiar {
+    padding: 1.5rem;
+    width: 80%;
+    border: 1px solid #0A3871;
+    border-radius: 23.25rem;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: white;
+    color: #0A3871;
+    transition: 200ms all;
+}
+.botonCopiar:hover {
+    border: solid 0.08rem #0d4d9c;
+    transform: scale(1.03);
+    background-color: #0A3871;
+    color: #ffffff;
+    font-size: 19px;
+}
+
+.footerContainer{
+    width: 100%;
+    height: 10rem;
+    text-align: center;
+    background: linear-gradient(#F3F5FC,#888888);
+    color: white;
+    font-weight: bold;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    display: inline-block
+}
+
+.imgGitHub{
+    width: 2rem;
+    margin: 0 1rem;
+}
+.imgLinkedin{
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+
+
+}
+
+
 

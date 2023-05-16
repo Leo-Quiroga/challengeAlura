@@ -43,7 +43,7 @@ function encriptar() {                      //función que encripta el texto.
         var dibujoDesaparece = document.getElementById('desaparecer');  //desaparece el dibujo y el textode abajo
         dibujoDesaparece.style.opacity = "0";
         dibujoDesaparece.style.position = "fixed"; //corre el div que desaparece al encriptar o desencriptar
-        dibujoDesaparece.style.left="25rem";  //corre el div que desaparece al encriptar o desencriptar
+        dibujoDesaparece.style.left="100rem";  //corre el div que desaparece al encriptar o desencriptar
 
 
         var botonCopiarAparece = document.getElementById('animacionBoton');     // aparece el botón copiar
@@ -108,7 +108,7 @@ function desencriptar() {                           //función que desencripta e
         var dibujoDesaparece = document.getElementById('desaparecer');  //desaparece el dibujo y el textode abajo
         dibujoDesaparece.style.opacity = "0";
         dibujoDesaparece.style.position = "fixed"; //corre el div que desaparece al encriptar o desencriptar
-        dibujoDesaparece.style.left="25rem";  //corre el div que desaparece al encriptar o desencriptar
+        dibujoDesaparece.style.left="100rem";  //corre el div que desaparece al encriptar o desencriptar
 
 
 
