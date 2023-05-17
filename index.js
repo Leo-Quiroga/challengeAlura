@@ -55,7 +55,7 @@ function encriptar() {                      //función que encripta el texto.
 
         var positionBoton = document.querySelector("#animacionBoton"); //da posición static al boton copiar para que aparezca dentro del area encriptada
         console.log(positionBoton);
-        positionBoton.style.position = "static";
+        positionBoton.style.position = "relative";
         
     }
 };
@@ -123,7 +123,7 @@ function desencriptar() {                           //función que desencripta e
 
         var positionBoton = document.querySelector("#animacionBoton"); //da posición static al boton copiar para que aparezca dentro del area encriptada
         console.log(positionBoton);
-        positionBoton.style.position = "static";
+        positionBoton.style.position = "relative";
 
 
     }
@@ -179,7 +179,7 @@ document.getElementById('inputEncriptado').innerText = ""; //limpia el área del
     botonCopiarAparece.style.opacity = "0";
     mensajeCopiado.style.cursor = "auto";
 
-    
+    inputHTML.focus();
     
 };
 

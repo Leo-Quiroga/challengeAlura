@@ -23,216 +23,6 @@ html, body {
     display: table;
 }
 
-
-
-
-
-
-
-/*
-.textArea1 {
-    position: absolute;
-    display: inline-block;
-    max-width: 39em;
-    max-height: 28em;
-    width: 100%;
-    height: 100%;
-    top: 8em;
-    left: 14em;
-}
-
-.areaTexto {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 1em;
-    font-size: 22px;
-    font-family: 'Inter', sans-serif;
-    color: #0a3871;
-    font-weight: 550;
-    background-color: #F3F5FC;
-    text-align: justify;
-    border: none;
-    border-radius: 24px;
-    cursor: auto;
-    resize: none;
-    outline: 0 none;
-}
-
-::placeholder {
-    color: #0A3871;
-    font-weight: bold;
-}
-
-
-.textArea2 {
-    position: absolute;
-    width: 22em;
-    height: 41em;
-    right: 14em;
-    top: 3em;
-}
-
-.areaEncriptada {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 1em;
-    font-size: 22px;
-    font-family: 'Inter', sans-serif;
-    color: #0A3871;
-    font-weight: 550;
-    text-align: justify;
-    border: none;
-    border-radius: 24px;
-    resize: none;
-    cursor: default;
-}
-
-.dibujoDerecha {
-    position: absolute;
-    width: 15em;
-    height: 14em;
-    right: 19em;
-    top: 10em;
-}
-
-.dibujo {
-    position: absolute;
-}
-
-.textoAreaDerecha {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    gap: 1em;
-    position: absolute;
-    width: 20em;
-    height: 5em;
-    right: 14em;
-    top: 32em;
-}
-
-.mensajeDerecha1 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.instrucciones {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 1em;
-    position: absolute;
-    width: 14em;
-    height: 2em;
-    top: 39em;
-    left: 14em;
-}
-
-.textoIntrucciones {
-    font-size: 12px;
-}
-
-.spanRojo {
-    font-size: 14px;
-    color: red;
-}
-
-.botonesIzquierda {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 2em;
-    position: absolute;
-    width: 42em;
-    height: 5em;
-    top: 41em;
-    justify-content: space-evenly;
-    left: 14em;
-}
-
-.botonEncriptar {
-    padding: 1.5em;
-    width: 100%;
-    border: 0.03em solid #0A3871;
-    border-radius: 23.25em;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #216FF4;
-    color: white;
-    cursor: pointer;
-    transition: 200ms all;
-}
-
-.botonDesencriptar {
-    padding: 1.5em;
-    width: 100%;
-    border: 0.03em solid #0A3871;
-    border-radius: 23.25em;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #D8DFE8;
-    color: #0A3871;
-    cursor: pointer;
-    transition: 200ms all;
-}
-
-.botonEncriptar:hover {
-    border: solid 0.08em #a3ffbf;
-    transform: scale(1.02);
-    background-color: #0A3871;
-    font-size: 19px;
-}
-
-.botonDesencriptar:hover {
-    border: solid 0.08em #0d4d9c;
-    transform: scale(1.02);
-    background-color: #bbbbbb;
-    font-size: 19px;
-}
-
-.botonesDerecha {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0;
-    gap: 0;
-    position: absolute;
-    width: 21em;
-    height: 5em;
-    right: 13em;
-    top: 41em;
-    justify-content: center;
-}
-
-#animacionBoton {
-    opacity: 0;
-}
-
-.botonCopiar {
-    padding: 1.5em;
-    width: 100%;
-    border: 1px solid #0A3871;
-    border-radius: 23.25em;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: white;
-    color: #0A3871;
-    transition: 200ms all;
-}
-
-.botonCopiar:hover {
-    border: solid 0.08em #0d4d9c;
-    transform: scale(1.02);
-    background-color: #0A3871;
-    color: #ffffff;
-    font-size: 19px;
-} */
-
 .areaEncriptada:focus {
     outline: none; /* quita el resalte del borde al estar seleccionado el input */
 }
@@ -274,7 +64,11 @@ html, body {
 
     /* css header */
 
-    header {
+    header {  
+        background: linear-gradient(#888888,#F3F5FC);   
+    } 
+    
+    .contenedorHeader{
     max-width: 600px;
     max-height: 90px;
     width: 100%;
@@ -283,8 +77,9 @@ html, body {
     flex-direction: row;
     align-items:center;
     text-align: center;
-    background: linear-gradient(#888888,#F3F5FC);
+            
     }
+
 
     .divImagen {
 
@@ -491,10 +286,12 @@ html, body {
 
     .footerContainer{
       
+       height: auto; 
        text-align: center;
        background: linear-gradient(#F3F5FC,#888888);
        color: white;
        font-weight: bold;
+       padding: 1rem;
     }
 
     .social-media{
@@ -530,7 +327,13 @@ html, body {
     .col-s-11{width: 91.66%;}
     .col-s-12{width: 100%;}
 
-header {
+
+
+header {  
+    background: linear-gradient(#888888,#F3F5FC);   
+} 
+
+.contenedorHeader{
     max-height: 10rem;
     width: 100%;
     height: 100%;
@@ -538,7 +341,6 @@ header {
     flex-direction: row;
     align-items:center;
     text-align: center;
-    background: linear-gradient(#888888,#F3F5FC);
     padding: 1rem;
     
 }
@@ -766,11 +568,12 @@ header {
 
 .footerContainer{
     width: 100%;
-    height: 10rem;
+    height: auto;
     text-align: center;
     background: linear-gradient(#F3F5FC,#888888);
     color: white;
     font-weight: bold;
+    padding: 1rem;
 }
 
 .social-media{
@@ -809,7 +612,11 @@ header {
     .col-l-12{width: 100%;}
 
 
-    header {
+    header {  
+        background: linear-gradient(#888888,#F3F5FC);   
+    } 
+
+    .contenedorHeader{
         max-height: 10rem;
         max-width: 1400px;
         width: 100%;
@@ -818,11 +625,9 @@ header {
         flex-direction: row;
         align-items:center;
         text-align: center;
-        background: linear-gradient(#888888,#F3F5FC);
         padding: 1rem;
         margin: 0 auto;
-        
-    } 
+    }
     
     .divImagen {    
         width: 8rem;
@@ -843,7 +648,7 @@ header {
     
     .imagen-titulo{
         width: 30%;
-        top: 0;
+        float: right;
     }
     
     #section1{
@@ -957,7 +762,7 @@ header {
 
 .areaEncriptada {
     width: 90%;
-    height: 42rem;
+    height: 52rem;
     padding: 1rem;
     background-color: white;
     border-radius: 24px; 
@@ -969,13 +774,20 @@ header {
 }
 
 #inputEncriptado{
-    width: 100%;
-    /* height: 100%; */
+    max-height: 42rem;
+    width: auto;
+    height: 100%;
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     color: #0A3871;
     font-weight: 550;
     padding: 1rem;
+    overflow-y: auto;
+    max-width: 24rem;
+    position: absolute;
+    overflow-x: auto;
+    text-align: justify;
+    overflow-y: auto;
 }
 
 
@@ -990,8 +802,9 @@ header {
 } 
     
 .dibujo {
-    width: 10%;
+    width: 100%;
     opacity: 1;  
+    margin: 5rem 0;
     
     
 }
@@ -1006,7 +819,7 @@ header {
 }
     
 .mensajeDerecha1 {
-    font-size: 24px;
+    font-size: 2rem;
     font-weight: bold;
     margin: 1rem 0;
     
@@ -1022,6 +835,7 @@ header {
     width: 100%;
     margin: 1rem 0;
     position:fixed; 
+    top: 43rem;
 }
 
 #animacionBoton {
@@ -1030,7 +844,7 @@ header {
 
 .botonCopiar {
     padding: 1.5rem;
-    width: 80%;
+    width: 100%;
     border: 1px solid #0A3871;
     border-radius: 23.25rem;
     font-size: 18px;
@@ -1049,11 +863,12 @@ header {
 
 .footerContainer{
     width: 100%;
-    height: 10rem;
+    height: auto;
     text-align: center;
     background: linear-gradient(#F3F5FC,#888888);
     color: white;
     font-weight: bold;
+    padding: 1rem;
 }
 
 .social-media{
