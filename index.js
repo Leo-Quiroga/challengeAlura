@@ -2,7 +2,6 @@
 var inputHTML = document.querySelector("#inputTexto");//se trae el textArea donde el usuario pone el texto que quiere encriptar HTML a javascript.
 inputHTML.focus();
 var textoEncriptado = "";
-var inputEncriptado = document.querySelector("#inputEncriptado"); //Se trae el textArea ya encriptada
 
 function encriptar() {                      //función que encripta el texto.
     let textoArray = inputHTML.value;
@@ -12,6 +11,7 @@ function encriptar() {                      //función que encripta el texto.
             inputHTML.placeholder = "Ingrese el texto aquí.";                // devuelve el place holder original
         }, 1500);
     } else {
+        
         textoArray = textoArray.split('');
         for (let i = 0; i < textoArray.length; i++) { // El For contiene un switch que hace el encriptado
             switch (true) {
@@ -34,11 +34,17 @@ function encriptar() {                      //función que encripta el texto.
                     break;
             }
         }
+
+        
         
         textoEncriptado = textoArray.join('');          //Une las letras para que aparezcan en el textarea de la Derecha
         inputHTML.value = "";                           //limpia el textArea una vez se encripta
-       
+        
+
+    
+
         document.getElementById('inputEncriptado').innerText = textoEncriptado; //imprime el texto encriptado en el área 2
+        
 
         var dibujoDesaparece = document.getElementById('desaparecer');  //desaparece el dibujo y el textode abajo
         dibujoDesaparece.style.opacity = "0";
@@ -54,8 +60,9 @@ function encriptar() {                      //función que encripta el texto.
         mensajeCopiado.style.cursor = "pointer";
 
         var positionBoton = document.querySelector("#animacionBoton"); //da posición static al boton copiar para que aparezca dentro del area encriptada
-        console.log(positionBoton);
+        
         positionBoton.style.position = "relative";
+        
         
     }
 };
@@ -99,8 +106,13 @@ function desencriptar() {                           //función que desencripta e
                     break;
             }
         }
+
+        
+
         textoEncriptado = textoArray.join('');  //Une las letras para que aparezcan en el textarea de la Derecha 
         inputHTML.value = "";                   //Limpia el textarea de la izquierda
+        
+        
         
         document.getElementById('inputEncriptado').innerText = textoEncriptado; //imprime el texto encriptado en el área 2
 
@@ -125,7 +137,7 @@ function desencriptar() {                           //función que desencripta e
         console.log(positionBoton);
         positionBoton.style.position = "relative";
 
-
+        
     }
 }
 
@@ -153,6 +165,9 @@ document.execCommand("copy");
 // Elimina el elemento de textarea
 document.body.removeChild(textarea);
 
+
+
+
 document.getElementById('inputEncriptado').innerText = ""; //limpia el área del encriptado
 
 
@@ -169,9 +184,9 @@ document.getElementById('inputEncriptado').innerText = ""; //limpia el área del
     inputEncriptado.value = "";
     setTimeout(() => {
         var dibujoDesaparece = document.getElementById('desaparecer');  //aparece el dibujo y el textode abajo
-        dibujoDesaparece.style.transition = "2s"                        //con animación para que se vea una transición
+        dibujoDesaparece.style.transition = "0s"                        //con animación para que se vea una transición
         dibujoDesaparece.style.opacity = "1";
-        dibujoDesaparece.style.position = "initial"; //vuelve a ubicar el div desaparecer
+        dibujoDesaparece.style.position = "relative"; //vuelve a ubicar el div desaparecer
         dibujoDesaparece.style.left="0";   //vuelve a ubicar el div desaparecer
     }, 1500);
     var botonCopiarAparece = document.getElementById('animacionBoton');     // desaparece el botón copiar
@@ -180,6 +195,9 @@ document.getElementById('inputEncriptado').innerText = ""; //limpia el área del
     mensajeCopiado.style.cursor = "auto";
 
     inputHTML.focus();
+
+    
+    
     
 };
 

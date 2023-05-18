@@ -1,8 +1,9 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
@@ -12,32 +13,31 @@ html, body {
 
 /* general css main */
 
-.contenedor{
-    max-width: 1400px;
+.contenedor {
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.fila::after{
+.fila::after {
     content: "";
     clear: both;
     display: table;
 }
 
 .areaEncriptada:focus {
-    outline: none; /* quita el resalte del borde al estar seleccionado el input */
+    outline: none;
+    /* quita el resalte del borde al estar seleccionado el input */
 }
 
 .areaEncriptada::-moz-selection {
-    background-color: transparent; /*quita el color del seleccionado en el navegador Mozilla*/
+    background-color: transparent;
+    /*quita el color del seleccionado en el navegador Mozilla*/
 }
 
 .areaEncriptada::selection {
-    background-color: transparent; /*quita el color del seleccionado en los otros navegadores*/
+    background-color: transparent;
+    /*quita el color del seleccionado en los otros navegadores*/
 }
-
-
-
-
 
 /* Responsive*/
 
@@ -64,50 +64,50 @@ html, body {
 
     /* css header */
 
-    header {  
-        background: linear-gradient(#888888,#F3F5FC);   
-    } 
-    
-    .contenedorHeader{
-    max-width: 600px;
-    max-height: 90px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    text-align: center;
-            
+    header {
+        background: linear-gradient(#888888, #F3F5FC);
     }
 
+    .contenedorHeader {
+        max-width: 600px;
+        max-height: 90px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
 
     .divImagen {
-
-    margin: 0;
-    padding: 0;
-    width: 7rem;
+        margin: 0;
+        padding: 0;
+        width: 7rem;
     }
-    .imagen-logo{
+
+    .imagen-logo {
         width: 100%;
         margin: 2rem 0;
     }
 
-    .titulo{
+    .titulo {
         width: 100%;
         padding: 0.5rem;
-        color:#0a3871;
+        color: #0a3871;
         font-size: 1.5rem;
-        font-weight: 900;       
+        font-weight: 900;
     }
 
-    .imagen-titulo{
+    .imagen-titulo {
         width: 40%;
     }
 
-    .areaTexto{
+    .areaTexto {
         text-align: center;
         margin: 1rem 0;
     }
+
+    /* CSS main */
 
     .textArea1 {
         width: 90%;
@@ -123,6 +123,10 @@ html, body {
         resize: none;
         outline: 0 none;
     }
+
+    ::placeholder {
+        color: #0a3871; /* Cambia el color del placeholder*/
+      }
 
     .instrucciones {
         padding: 1rem;
@@ -167,7 +171,7 @@ html, body {
         background-color: #0A3871;
         font-size: 19px;
     }
-    
+
     .botonDesencriptar {
         padding: 1.5rem;
         width: 90%;
@@ -188,77 +192,58 @@ html, body {
         font-size: 19px;
     }
 
-    #section2{
+    #section2 {
         margin: 1rem 0;
-        
     }
 
     .areaEncriptada {
         width: 90%;
-        /* height: 100%; */
         padding: 1rem;
         background-color: white;
-        border-radius: 24px; 
+        border-radius: 24px;
         margin: 0 auto;
         text-align: justify;
-        cursor: default; 
-        
-        
+        cursor: default;
     }
 
-    #inputEncriptado{
+    #inputEncriptado {
         width: 100%;
-        /* height: 100%; */
         font-size: 18px;
         font-family: 'Inter', sans-serif;
         color: #0A3871;
         font-weight: 550;
     }
 
-
-    #desaparecer{
-        
-
+    .dibujoDerecha {
+        width: 100%;
+        text-align: center;
     }
 
-    .dibujoDerecha { 
-        width: 100%;
-        text-align: center;    
-    } 
-    
     .dibujo {
         width: 30%;
-        opacity: 1;  
-        /* position:absolute; */
-        
+        opacity: 1;
     }
-    
+
     .textoAreaDerecha {
-    
         flex-direction: column;
         text-align: center;
         padding: 0;
-        cursor: default;    
-        
+        cursor: default;
     }
-    
+
     .mensajeDerecha1 {
         font-size: 24px;
         font-weight: bold;
         margin: 1rem 0;
-       
     }
-    .mensajeDerecha2 {
-        
-    }
-    
+
     .botonesDerecha {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         margin: 1rem 0;
-        position:fixed; 
+        position: fixed;
     }
 
     #animacionBoton {
@@ -276,6 +261,7 @@ html, body {
         color: #0A3871;
         transition: 200ms all;
     }
+
     .botonCopiar:hover {
         border: solid 0.08rem #0d4d9c;
         transform: scale(1.03);
@@ -284,28 +270,30 @@ html, body {
         font-size: 19px;
     }
 
-    .footerContainer{
-      
-       height: auto; 
-       text-align: center;
-       background: linear-gradient(#F3F5FC,#888888);
-       color: white;
-       font-weight: bold;
-       padding: 1rem;
+    /* CSS Footer */
+
+    .footerContainer {
+        height: auto;
+        text-align: center;
+        background: linear-gradient(#F3F5FC, #888888);
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
     }
 
-    .social-media{
+    .social-media {
         display: flex;
         flex-direction: row;
         margin: 1rem;
         display: inline-block
     }
 
-    .imgGitHub{
+    .imgGitHub {
         width: 2rem;
         margin: 0 1rem;
     }
-    .imgLinkedin{
+
+    .imgLinkedin {
         width: 2rem;
         margin: 0 1rem;
     }
@@ -327,271 +315,258 @@ html, body {
     .col-s-11{width: 91.66%;}
     .col-s-12{width: 100%;}
 
+    /* CSS header */
 
+    header {
+        background: linear-gradient(#888888, #F3F5FC);
+    }
 
-header {  
-    background: linear-gradient(#888888,#F3F5FC);   
-} 
+    .contenedorHeader {
+        max-height: 10rem;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
 
-.contenedorHeader{
-    max-height: 10rem;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    text-align: center;
-    padding: 1rem;
-    
-}
+    .divImagen {
+        width: 7rem;
+    }
 
-.divImagen {    
-    width: 7rem;
-}
-    
-.imagen-logo{
-    width: 100%;
-    margin: 2rem 0;
-}
+    .imagen-logo {
+        width: 100%;
+        margin: 2rem 0;
+    }
 
-.titulo{
-    width: 100%;
-    color:#0a3871;
-    font-size: 2rem;
-    font-weight: bold;       
-}
+    .titulo {
+        width: 100%;
+        color: #0a3871;
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
-.imagen-titulo{
-    width: 50%;
-    top: 0;
-}
+    .imagen-titulo {
+        width: 50%;
+        top: 0;
+    }
 
-#section1{
-    /* width: 100%; */
-    text-align: center;
-}
+    /* CSS main */
 
-.fila{
-    display: flex;
-    flex-direction: column;
-}
+    #section1 {
+        text-align: center;
+    }
 
-.areaTexto{
-    text-align: center; 
-    margin: 1rem 0;
-} 
-    
-.textArea1 {
-    width: 90%;
-    height: 36rem;
-    margin-top: 2rem;
-    padding: 1rem;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    color: #0a3871;
-    font-weight: 550;
-    background-color: #F3F5FC;
-    text-align: justify;
-    border: none;
-    cursor: auto;
-    resize: none;
-    outline: 0 none;
-}
+    .fila {
+        display: flex;
+        flex-direction: column;
+    }
 
-.instrucciones {
-    margin: 0 auto;
-    padding: 1rem;
-    width: 90%;
-    text-align: left;
-}
+    .areaTexto {
+        text-align: center;
+        margin: 1rem 0;
+    }
 
-.textoIntrucciones {
-    font-size: 14px;
-}
+    .textArea1 {
+        width: 90%;
+        height: 36rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        font-size: 20px;
+        font-family: 'Inter', sans-serif;
+        color: #0a3871;
+        font-weight: 550;
+        background-color: #F3F5FC;
+        text-align: justify;
+        border: none;
+        cursor: auto;
+        resize: none;
+        outline: 0 none;
+    }
 
-.spanRojo {
-    font-size: 16px;
-    color: red;
-}
+    ::placeholder {
+        color: #0a3871; /* Cambia el color del placeholder*/
+      }
 
-.botonesIzquierda {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    width: 90%;
-    margin: 1rem auto;
+    .instrucciones {
+        margin: 0 auto;
+        padding: 1rem;
+        width: 90%;
+        text-align: left;
+    }
 
-}
+    .textoIntrucciones {
+        font-size: 14px;
+    }
 
-.botonEncriptar {
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    border: 0.03rem solid #0A3871;
-    border-radius: 23.25rem;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #216FF4;
-    color: white;
-    cursor: pointer;
-    transition: 200ms all;
-}
+    .spanRojo {
+        font-size: 16px;
+        color: red;
+    }
 
-.botonEncriptar:hover {
-    border: solid 0.08rem #a3ffbf;
-    transform: scale(1.03);
-    background-color: #0A3871;
-    font-size: 19px;
-}
-    
-.botonDesencriptar {
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    border: 0.03rem solid #0A3871;
-    border-radius: 23.25em;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #D8DFE8;
-    color: #0A3871;
-    cursor: pointer;
-    transition: 200ms all;
-}
+    .botonesIzquierda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
 
-.botonDesencriptar:hover {
-    border: solid 0.08rem #0d4d9c;
-    transform: scale(1.03);
-    background-color: #bbbbbb;
-    font-size: 19px;
-}
+    .botonEncriptar {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        border: 0.03rem solid #0A3871;
+        border-radius: 23.25rem;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #216FF4;
+        color: white;
+        cursor: pointer;
+        transition: 200ms all;
+    }
 
-#section2{
-    /* width: 100%; */
-    text-align: center;
-    margin: 1rem 0;
-}
+    .botonEncriptar:hover {
+        border: solid 0.08rem #a3ffbf;
+        transform: scale(1.03);
+        background-color: #0A3871;
+        font-size: 19px;
+    }
 
-.areaEncriptada {
-    width: 90%;
-    /* height: 100%; */
-    padding: 1rem;
-    background-color: white;
-    border-radius: 24px; 
-    margin: 0 auto;
-    text-align: justify;
-    cursor: default; 
-    
-    
-}
+    .botonDesencriptar {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        border: 0.03rem solid #0A3871;
+        border-radius: 23.25em;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #D8DFE8;
+        color: #0A3871;
+        cursor: pointer;
+        transition: 200ms all;
+    }
 
-#inputEncriptado{
-    width: 100%;
-    /* height: 100%; */
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    color: #0A3871;
-    font-weight: 550;
-    padding: 1rem;
-}
+    .botonDesencriptar:hover {
+        border: solid 0.08rem #0d4d9c;
+        transform: scale(1.03);
+        background-color: #bbbbbb;
+        font-size: 19px;
+    }
 
+    #section2 {
+        text-align: center;
+        margin: 1rem 0;
+    }
 
-#desaparecer{
-    
+    .areaEncriptada {
+        width: 90%;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 24px;
+        margin: 0 auto;
+        text-align: justify;
+        cursor: default;
+    }
 
-}
+    #inputEncriptado {
+        width: 100%;
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+        font-weight: 550;
+        padding: 1rem;
+    }
 
-.dibujoDerecha { 
-    width: 100%;
-    text-align: center;    
-} 
-    
-.dibujo {
-    width: 10%;
-    opacity: 1;  
-    
-    
-}
-    
-.textoAreaDerecha {
+    .dibujoDerecha {
+        width: 100%;
+        text-align: center;
+    }
 
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    cursor: default;    
-    
-}
-    
-.mensajeDerecha1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 1rem 0;
-    
-}
-.mensajeDerecha2 {
-    
-}
-    
-.botonesDerecha {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 1rem 0;
-    position:fixed; 
-}
+    .dibujo {
+        width: 10%;
+        opacity: 1;
+    }
 
-#animacionBoton {
-    opacity: 0;
-}
+    .textoAreaDerecha {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        cursor: default;
+    }
 
-.botonCopiar {
-    padding: 1.5rem;
-    width: 80%;
-    border: 1px solid #0A3871;
-    border-radius: 23.25rem;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: white;
-    color: #0A3871;
-    transition: 200ms all;
-}
-.botonCopiar:hover {
-    border: solid 0.08rem #0d4d9c;
-    transform: scale(1.03);
-    background-color: #0A3871;
-    color: #ffffff;
-    font-size: 19px;
-}
+    .mensajeDerecha1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
 
-.footerContainer{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background: linear-gradient(#F3F5FC,#888888);
-    color: white;
-    font-weight: bold;
-    padding: 1rem;
-}
+    .botonesDerecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0;
+        position: fixed;
+    }
 
-.social-media{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    display: inline-block
-}
+    #animacionBoton {
+        opacity: 0;
+    }
 
-.imgGitHub{
-    width: 2rem;
-    margin: 0 1rem;
-}
-.imgLinkedin{
-    width: 2rem;
-    margin: 0 1rem;
-}
+    .botonCopiar {
+        padding: 1.5rem;
+        width: 80%;
+        border: 1px solid #0A3871;
+        border-radius: 23.25rem;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: white;
+        color: #0A3871;
+        transition: 200ms all;
+    }
 
+    .botonCopiar:hover {
+        border: solid 0.08rem #0d4d9c;
+        transform: scale(1.03);
+        background-color: #0A3871;
+        color: #ffffff;
+        font-size: 19px;
+    }
+
+    /* CSS Footer */
+
+    .footerContainer {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: linear-gradient(#F3F5FC, #888888);
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        display: inline-block
+    }
+
+    .imgGitHub {
+        width: 2rem;
+        margin: 0 1rem;
+    }
+
+    .imgLinkedin {
+        width: 2rem;
+        margin: 0 1rem;
+    }
 }
 
 
@@ -611,285 +586,276 @@ header {
     .col-l-11{width: 91.66%;}
     .col-l-12{width: 100%;}
 
+    /* CSS header */
 
-    header {  
-        background: linear-gradient(#888888,#F3F5FC);   
-    } 
+    header {
+        background: linear-gradient(#888888, #F3F5FC);
+    }
 
-    .contenedorHeader{
+    .contenedorHeader {
         max-height: 10rem;
         max-width: 1400px;
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: row;
-        align-items:center;
+        align-items: center;
         text-align: center;
         padding: 1rem;
         margin: 0 auto;
     }
-    
-    .divImagen {    
+
+    .divImagen {
         width: 8rem;
     }
-        
-    .imagen-logo{
+
+    .imagen-logo {
         width: 100%;
         margin: 2rem 0;
         resize: none;
     }
-    
-    .titulo{
+
+    .titulo {
         width: 100%;
-        color:#0a3871;
+        color: #0a3871;
         font-size: 3rem;
-        font-weight: bold;       
+        font-weight: bold;
     }
-    
-    .imagen-titulo{
+
+    .imagen-titulo {
         width: 30%;
         float: right;
     }
-    
-    #section1{
-        /* width: 100%; */
-        /* text-align: center; */
-    }
 
-    .fila{
+    /* CSS main */
+
+    .fila {
         display: flex;
         flex-direction: row;
     }
 
-    
-.areaTexto{
-    text-align: center; 
-    margin: 1rem 0;
-} 
-    
-.textArea1 {
-    width: 90%;
-    height: 36rem;
-    margin-top: 2rem;
-    padding: 1rem;
-    font-size: 20px;
-    font-family: 'Inter', sans-serif;
-    color: #0a3871;
-    font-weight: 550;
-    background-color: #F3F5FC;
-    text-align: justify;
-    border: none;
-    cursor: auto;
-    resize: none;
-    outline: 0 none;
-}
+    .areaTexto {
+        text-align: center;
+        margin: 1rem 0;
+    }
 
-.instrucciones {
-    margin: 0 auto;
-    padding: 1rem;
-    width: 90%;
-    text-align: left;
-}
+    .textArea1 {
+        width: 90%;
+        height: 36rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        font-size: 20px;
+        font-family: 'Inter', sans-serif;
+        color: #0a3871;
+        font-weight: 550;
+        background-color: #F3F5FC;
+        text-align: justify;
+        border: none;
+        cursor: auto;
+        resize: none;
+        outline: 0 none;
+    }
 
-.textoIntrucciones {
-    font-size: 14px;
-}
+    ::placeholder {
+        color: #0a3871; /* Cambia el color del placeholder*/
+      }
 
-.spanRojo {
-    font-size: 16px;
-    color: red;
-}
+    .instrucciones {
+        margin: 0 auto;
+        padding: 1rem;
+        width: 90%;
+        text-align: left;
+    }
 
-.botonesIzquierda {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-    width: 90%;
-    margin: 1rem auto;
+    .textoIntrucciones {
+        font-size: 14px;
+    }
 
-}
+    .spanRojo {
+        font-size: 16px;
+        color: red;
+    }
 
-.botonEncriptar {
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    border: 0.03rem solid #0A3871;
-    border-radius: 23.25rem;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #216FF4;
-    color: white;
-    cursor: pointer;
-    transition: 200ms all;
-}
+    .botonesIzquierda {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+        width: 90%;
+        margin: 1rem auto;
 
-.botonEncriptar:hover {
-    border: solid 0.08rem #a3ffbf;
-    transform: scale(1.03);
-    background-color: #0A3871;
-    font-size: 19px;
-}
-    
-.botonDesencriptar {
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    width: 50%;
-    border: 0.03rem solid #0A3871;
-    border-radius: 23.25em;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: #D8DFE8;
-    color: #0A3871;
-    cursor: pointer;
-    transition: 200ms all;
-}
+    }
 
-.botonDesencriptar:hover {
-    border: solid 0.08rem #0d4d9c;
-    transform: scale(1.03);
-    background-color: #bbbbbb;
-    font-size: 19px;
-}
+    .botonEncriptar {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        border: 0.03rem solid #0A3871;
+        border-radius: 23.25rem;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #216FF4;
+        color: white;
+        cursor: pointer;
+        transition: 200ms all;
+    }
 
-#section2{
-    /* width: 100%; */
-    text-align: center;
-    margin: 1rem 0;
-}
+    .botonEncriptar:hover {
+        border: solid 0.08rem #a3ffbf;
+        transform: scale(1.03);
+        background-color: #0A3871;
+        font-size: 19px;
+    }
 
-.areaEncriptada {
-    width: 90%;
-    height: 52rem;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 24px; 
-    margin: 0 auto;
-    text-align: justify;
-    cursor: default; 
-    
-    
-}
+    .botonDesencriptar {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        width: 50%;
+        border: 0.03rem solid #0A3871;
+        border-radius: 23.25em;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: #D8DFE8;
+        color: #0A3871;
+        cursor: pointer;
+        transition: 200ms all;
+    }
 
-#inputEncriptado{
-    max-height: 42rem;
-    width: auto;
-    height: 100%;
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-    color: #0A3871;
-    font-weight: 550;
-    padding: 1rem;
-    overflow-y: auto;
-    max-width: 24rem;
-    position: absolute;
-    overflow-x: auto;
-    text-align: justify;
-    overflow-y: auto;
-}
+    .botonDesencriptar:hover {
+        border: solid 0.08rem #0d4d9c;
+        transform: scale(1.03);
+        background-color: #bbbbbb;
+        font-size: 19px;
+    }
 
+    #section2 {
+        text-align: center;
+        margin: 1rem;
+    }
 
-#desaparecer{
-    
+    .areaEncriptada {
+        width: 90%;
+        height: 49rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 24px;
+        margin: 0 auto;
+        text-align: justify;
+        cursor: default;
+        
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
 
-}
+    #inputEncriptado {
+        max-height: 41rem;
+        width: auto;
+        height: 100%;
+        font-size: 18px;
+        font-family: 'Inter', sans-serif;
+        color: #0A3871;
+        font-weight: 550;
+        padding: 1rem;
+        overflow-y: auto;
+        max-width: 20rem;
+        overflow-x: hidden;
+        text-align: justify;
+        display: flow-root;
+        position: absolute;
+    }
 
-.dibujoDerecha { 
-    width: 100%;
-    text-align: center;    
-} 
-    
-.dibujo {
-    width: 100%;
-    opacity: 1;  
-    margin: 5rem 0;
-    
-    
-}
-    
-.textoAreaDerecha {
+    #desaparecer{
+    position: relative;
+    }
 
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-    cursor: default;    
-    
-}
-    
-.mensajeDerecha1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 1rem 0;
-    
-}
-.mensajeDerecha2 {
-    
-}
-    
-.botonesDerecha {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 1rem 0;
-    position:fixed; 
-    top: 43rem;
-}
+    .dibujoDerecha {
+        width: 100%;
+        text-align: center;
+    }
 
-#animacionBoton {
-    opacity: 0;
-}
+    .dibujo {
+        width: 100%;
+        opacity: 1;
+        margin: 5rem 0;
+    }
 
-.botonCopiar {
-    padding: 1.5rem;
-    width: 100%;
-    border: 1px solid #0A3871;
-    border-radius: 23.25rem;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: white;
-    color: #0A3871;
-    transition: 200ms all;
-}
-.botonCopiar:hover {
-    border: solid 0.08rem #0d4d9c;
-    transform: scale(1.03);
-    background-color: #0A3871;
-    color: #ffffff;
-    font-size: 19px;
-}
+    .textoAreaDerecha {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+        cursor: default;
+    }
 
-.footerContainer{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    background: linear-gradient(#F3F5FC,#888888);
-    color: white;
-    font-weight: bold;
-    padding: 1rem;
+    .mensajeDerecha1 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 1rem 0;
+    }
+
+    .botonesDerecha {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 1rem 0;
+        top: 41rem;
+    }
+
+    #animacionBoton {
+        opacity: 0;
+    }
+
+    .botonCopiar {
+        padding: 1.5rem;
+        width: 100%;
+        border: 1px solid #0A3871;
+        border-radius: 23.25rem;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: white;
+        color: #0A3871;
+        transition: 200ms all;
+    }
+
+    .botonCopiar:hover {
+        border: solid 0.08rem #0d4d9c;
+        transform: scale(1.03);
+        background-color: #0A3871;
+        color: #ffffff;
+        font-size: 19px;
+    }
+
+    /* CSS Footer */
+
+    .footerContainer {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background: linear-gradient(#F3F5FC, #888888);
+        color: white;
+        font-weight: bold;
+        padding: 1rem;
+    }
+
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        display: inline-block
+    }
+
+    .imgGitHub {
+        width: 2rem;
+        margin: 0 1rem;
+    }
+
+    .imgLinkedin {
+        width: 2rem;
+        margin: 0 1rem;
+    }
 }
-
-.social-media{
-    display: flex;
-    flex-direction: row;
-    margin: 1rem;
-    display: inline-block
-}
-
-.imgGitHub{
-    width: 2rem;
-    margin: 0 1rem;
-}
-.imgLinkedin{
-    width: 2rem;
-    margin: 0 1rem;
-}
-
-
-
-}
-
 
 

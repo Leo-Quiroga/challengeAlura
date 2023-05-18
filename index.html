@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptador</title>
 
-  <!-- <link rel="stylesheet" ; href="reset.css" ;> -->
+  <link rel="stylesheet" ; href="reset.css" ;>
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,22 +16,22 @@
 </head>
 
 <body>
-  
+
   <header>
-  <div class="contenedorHeader">
-    <div  class="col-xs-3 col-m-3"> 
-      <div class="divImagen">
-        <img src="imagenes/logo.png" class="imagen-logo">
+    <div class="contenedorHeader">
+      <div class="col-xs-3 col-m-3">
+        <div class="divImagen">
+          <img src="imagenes/logo.png" class="imagen-logo">
+        </div>
+      </div>
+      <div class="col-xs-6 col-m-6">
+        <h1 class="titulo">enCRIPTAdor</h1>
+      </div>
+      <div class="col-xs-3 col-m-3">
+        <img src="imagenes/castle.png" class="imagen-titulo">
       </div>
     </div>
-    <div class="col-xs-6 col-m-6">
-      <h1 class="titulo">enCRIPTAdor</h1>
-    </div>
-    <div class="col-xs-3 col-m-3">
-      <img src="imagenes/castle.png" class="imagen-titulo">
-    </div>
-  </div>
-  
+
 
   </header>
 
@@ -41,12 +41,12 @@
 
       <div class="fila">
 
-        
+
         <section class="col-xs-12 col-m-12 col-l-8" id="section1">
 
           <div class="areaTexto">
-            <textarea rows="10" cols="30" required placeholder="Ingrese el texto aquí." id="inputTexto" class="textArea1">
-            </textarea>
+            <textarea rows="10" cols="30" required placeholder="Ingrese el texto aquí." id="inputTexto"
+              class="textArea1"></textarea>
           </div>
           <div class="instrucciones">
             <p class="textoIntrucciones"><span class="spanRojo">⚠</span> Sólo letras minúsculas y sin acentos.</p>
@@ -55,12 +55,12 @@
             <input type="submit" value="Encriptar" class="botonEncriptar" id="encriptar">
             <input type="submit" value="Desencriptar" class="botonDesencriptar" id="desencriptar">
           </div>
-         
+
         </section>
-      
-        <section class="col-xs-12 col-m-12 col-l-4" id="section2" >
-          
-          <div class="areaEncriptada" >
+
+        <section class="col-xs-12 col-m-12 col-l-4" id="section2">
+
+          <div class="areaEncriptada">
             <p id="inputEncriptado"></p>
 
             <div id="desaparecer">
@@ -68,7 +68,7 @@
                 <img src="imagenes/dibujo.png" class="dibujo">
               </div>
               <div class="textoAreaDerecha">
-                 <h2 class="mensajeDerecha1">Ningún mensaje fue encontrado</h2>
+                <h2 class="mensajeDerecha1">Ningún mensaje fue encontrado</h2>
                 <p class="mensajeDerecha2">Ingresa el texto que deseas encriptar o desencriptar.</p>
               </div>
             </div>
@@ -77,18 +77,18 @@
               <input type="submit" value="Copiar" class="botonCopiar" id="copiar">
             </div>
 
-          </div>         
-          
+          </div>
+
         </section>
       </div>
     </div>
-        
+
   </main>
   <script src="./index.js"></script>
-  
+
   <footer>
     <div class="footerContainer">
-      
+
       <div class="social-media">
         <a href="https://github.com/" target="_blank">
           <img src="imagenes/github.png" alt="GitHub" class="imgGitHub"></a>
@@ -106,4 +106,5 @@
   </footer>
 
 </body>
+
 </html>
