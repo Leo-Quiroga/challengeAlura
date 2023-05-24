@@ -34,8 +34,6 @@ function encriptar() {                      //función que encripta el texto.
                     break;
             }
         }
-
-        
         
         textoEncriptado = textoArray.join('');          //Une las letras para que aparezcan en el textarea de la Derecha
         inputHTML.value = "";                           //limpia el textArea una vez se encripta
@@ -60,8 +58,7 @@ function encriptar() {                      //función que encripta el texto.
 
         var positionBoton = document.querySelector("#animacionBoton"); //da posición relative al boton copiar para que aparezca dentro del area encriptada
         positionBoton.style.position = "relative";
-        
-        
+             
     }
 };
 
@@ -105,13 +102,9 @@ function desencriptar() {                           //función que desencripta e
             }
         }
 
-        
-
         textoEncriptado = textoArray.join('');  //Une las letras para que aparezcan en el textarea de la Derecha 
         inputHTML.value = "";                   //Limpia el textarea de la izquierda
-        
-        
-        
+         
         document.getElementById('inputEncriptado').innerText = textoEncriptado; //imprime el texto encriptado en el área 2
         var displayEncriptado =document.getElementById("inputEncriptado"); //devuelve el p encriptado a su lugar
         displayEncriptado.style.display= "block";
@@ -121,11 +114,8 @@ function desencriptar() {                           //función que desencripta e
         dibujoDesaparece.style.position = "fixed"; //corre el div que desaparece al encriptar o desencriptar
         dibujoDesaparece.style.left="100rem";  //corre el div que desaparece al encriptar o desencriptar
 
-
-
         var botonCopiarAparece = document.getElementById('animacionBoton');     // aparece el botón copiar
-        botonCopiarAparece.style.opacity = "1";
-        
+        botonCopiarAparece.style.opacity = "1";    
 
         dibujoDesaparece.style.transition = "0s";    //hacen que la trancisión de areaencriptada vuelva a 0
         var animacionBoton = document.getElementById('animacionBoton');
@@ -134,8 +124,7 @@ function desencriptar() {                           //función que desencripta e
 
         var positionBoton = document.querySelector("#animacionBoton"); //da posición relative al boton copiar para que aparezca dentro del area encriptada
         positionBoton.style.position = "relative";
-
-        
+    
     }
 }
 
@@ -162,9 +151,6 @@ function copiarPortapapeles() {                //función que copia el texto del
 
     // Elimina el elemento de textarea
     document.body.removeChild(textarea);
-
-
-
 
     document.getElementById('inputEncriptado').innerText = ""; //limpia el área del encriptado
 
@@ -194,9 +180,6 @@ function copiarPortapapeles() {                //función que copia el texto del
     mensajeCopiado.style.cursor = "auto";
 
     inputHTML.focus();
-
-    
-    
     
 };
 
