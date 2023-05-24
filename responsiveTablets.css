@@ -1,7 +1,3 @@
-
-
-
-
 /* Responsive para tablets y escirorio pequeño*/
 
 @media only screen and (min-width: 600px ){
@@ -20,31 +16,21 @@
 
     /* CSS header */
 
-    /* .contenedorHeader {
-        max-height: 10rem;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        padding: 1rem;
-    } */
-
     .divImagen {
         width: 7rem;
     }
 
     .imagen-logo {
-        
         margin: 2rem 0;
     }
 
     .titulo {
-        width: 100%;
-        color: #0a3871;
-        font-size: 2rem;
-        font-weight: bold;
+        width: 25%;
+    }
+
+    /* Efecto hover para el título */
+    .titulo:hover {
+        transform: scale(1.2);      
     }
 
     .imagen-titulo {
@@ -65,7 +51,7 @@
 
     .textArea1 {
         width: 90%;
-        height: 36rem;
+        height: 28rem;
         margin-top: 2rem;
         padding: 1rem;
         font-size: 20px;
@@ -183,7 +169,7 @@
     }
 
     .dibujo {
-        width: 10%;
+        width: 20%;
         opacity: 1;
     }
 

@@ -40,12 +40,9 @@ function encriptar() {                      //función que encripta el texto.
         textoEncriptado = textoArray.join('');          //Une las letras para que aparezcan en el textarea de la Derecha
         inputHTML.value = "";                           //limpia el textArea una vez se encripta
         
-
-    
-
         document.getElementById('inputEncriptado').innerText = textoEncriptado; //imprime el texto encriptado en el área 2
         
-        var displayEncriptado =document.getElementById("inputEncriptado");
+        var displayEncriptado =document.getElementById("inputEncriptado"); //devuelve el p encriptado a su lugar
         displayEncriptado.style.display= "block";
 
         var dibujoDesaparece = document.getElementById('desaparecer');  //desaparece el dibujo y el textode abajo
@@ -53,16 +50,15 @@ function encriptar() {                      //función que encripta el texto.
         dibujoDesaparece.style.position = "fixed"; //corre el div que desaparece al encriptar o desencriptar
         dibujoDesaparece.style.left="100rem";  //corre el div que desaparece al encriptar o desencriptar
 
-
         var botonCopiarAparece = document.getElementById('animacionBoton');     // aparece el botón copiar
         botonCopiarAparece.style.opacity = "1";
+
         dibujoDesaparece.style.transition = "0s";    //hacen que la trancisión de areaencriptada vuelva a 0
         var animacionBoton = document.getElementById('animacionBoton');
         animacionBoton.style.transition = "2s";
         mensajeCopiado.style.cursor = "pointer";
 
-        var positionBoton = document.querySelector("#animacionBoton"); //da posición static al boton copiar para que aparezca dentro del area encriptada
-        
+        var positionBoton = document.querySelector("#animacionBoton"); //da posición relative al boton copiar para que aparezca dentro del area encriptada
         positionBoton.style.position = "relative";
         
         
@@ -117,7 +113,7 @@ function desencriptar() {                           //función que desencripta e
         
         
         document.getElementById('inputEncriptado').innerText = textoEncriptado; //imprime el texto encriptado en el área 2
-        var displayEncriptado =document.getElementById("inputEncriptado");
+        var displayEncriptado =document.getElementById("inputEncriptado"); //devuelve el p encriptado a su lugar
         displayEncriptado.style.display= "block";
 
         var dibujoDesaparece = document.getElementById('desaparecer');  //desaparece el dibujo y el textode abajo
@@ -137,7 +133,6 @@ function desencriptar() {                           //función que desencripta e
         mensajeCopiado.style.cursor = "pointer";
 
         var positionBoton = document.querySelector("#animacionBoton"); //da posición relative al boton copiar para que aparezca dentro del area encriptada
-        console.log(positionBoton);
         positionBoton.style.position = "relative";
 
         
@@ -172,6 +167,7 @@ function copiarPortapapeles() {                //función que copia el texto del
 
 
     document.getElementById('inputEncriptado').innerText = ""; //limpia el área del encriptado
+
     var displayEncriptado =document.getElementById("inputEncriptado");
     displayEncriptado.style.display= "none";
 
@@ -179,14 +175,12 @@ function copiarPortapapeles() {                //función que copia el texto del
 
     setTimeout(() => {
         mensajeCopiado.value = "Copiar";                // vuelve a poner Compiar.
-        
         var positionBoton = document.querySelector("#animacionBoton"); // retoma posición fixed del boton copiar
-        console.log(positionBoton);
-        positionBoton.style.position = "fixed";
-
-    }, 1500);
+    positionBoton.style.position = "fixed";
+    }, 1500);    
+        
     inputEncriptado.value = "";
-    setTimeout(() => {
+
         var dibujoDesaparece = document.getElementById('desaparecer');  //aparece el dibujo y el textode abajo
         dibujoDesaparece.style.transition = "0s"                        //con animación para que se vea una transición
         dibujoDesaparece.style.opacity = "1";
@@ -194,7 +188,6 @@ function copiarPortapapeles() {                //función que copia el texto del
         dibujoDesaparece.style.position = "relative"; //vuelve a ubicar el div desaparecer
         dibujoDesaparece.style.left="0";   //vuelve a ubicar el div desaparecer
 
-    }, 1500);
     var botonCopiarAparece = document.getElementById('animacionBoton');     // desaparece el botón copiar
     botonCopiarAparece.style.transition = "1.5s"                            // con a nimación para que se vea una transición
     botonCopiarAparece.style.opacity = "0";
