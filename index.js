@@ -30,8 +30,21 @@ function encriptar() {                      //función que encripta el texto.
                 case textoArray[i] == "u":
                     textoArray[i] = textoArray[i].replace("u", "ufat");
                     break;
-                default:
-                    break;
+                case /[áéíóú]/.test(textoArray[i]): 
+                case /[ÁÉÍÓÚ]/.test(textoArray[i]):
+                    inputHTML.value = "";
+                    inputHTML.placeholder = "No se deben utilizar vocales con tilde.";
+                    setTimeout(() => {
+                    inputHTML.placeholder = "Ingrese el texto aquí.";
+                    }, 2000);
+                    return;
+                case /[A-Z]/.test(textoArray[i]):
+                    inputHTML.value = "";
+                    inputHTML.placeholder = "No se deben utilizar letras mayúsculas.";
+                    setTimeout(() => {
+                    inputHTML.placeholder = "Ingrese el texto aquí.";
+                    }, 2000);
+                    return;
             }
         }
         
@@ -97,8 +110,21 @@ function desencriptar() {                           //función que desencripta e
                     textoArray[i + 2] = textoArray[i].pop;
                     textoArray[i + 3] = textoArray[i].pop;
                     break;
-                default:
-                    break;
+                case /[áéíóú]/.test(textoArray[i]): 
+                case /[ÁÉÍÓÚ]/.test(textoArray[i]):
+                    inputHTML.value = "";
+                    inputHTML.placeholder = "No se deben utilizar vocales con tilde.";
+                    setTimeout(() => {
+                    inputHTML.placeholder = "Ingrese el texto aquí.";
+                    }, 2000);
+                    return;
+                case /[A-Z]/.test(textoArray[i]):
+                    inputHTML.value = "";
+                    inputHTML.placeholder = "No se deben utilizar letras mayúsculas.";
+                    setTimeout(() => {
+                    inputHTML.placeholder = "Ingrese el texto aquí.";
+                    }, 2000);
+                    return;
             }
         }
 
@@ -190,7 +216,4 @@ buttonDesencriptar.onclick = desencriptar;                              //ejecut
 var buttonCopiar = document.querySelector("#copiar");
 buttonCopiar.onclick = copiarPortapapeles;                              //ejecuta función copiar cuando se da click en el botón
 var mensajeCopiado = document.querySelector("#copiar");               //trae copiar para luego cambiar value cuando se ejecuta copiar
-
-
-
 
